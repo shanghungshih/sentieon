@@ -1,30 +1,19 @@
 # sentieon
 
-
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
+    ├── Jobs    
+    │   ├── run_Jobs.pl
+    │   ├── variant_calling.sh
+    │   ├── _rc_function_.sh
+    │   ├── test_list.txt
+    │   ├── Outputs
+    │   └── logs
+    ├── Fastq                   
+    ├── Reference
+    │   └── hg19_download.sh
+    ├── bins    
+    │   └── sentieon-genomics-201808.tar.gz
     └── README.md
-
-
-.
-├── Jobs
-│   ├── run_Jobs.pl
-│   ├── variant_calling.sh
-│   ├── _rc_function_.sh
-│   ├── test_list.txt
-│   ├── Outputs
-│   └── logs
-├── Fastq
-├── Reference
-│   └── hg19_download.sh
-├── bins
-│   └── sentieon-genomics-201808.tar.gz
-└── README
 
 ## Installation
 ``` shell
