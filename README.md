@@ -1,6 +1,6 @@
 # sentieon
 
-    .
+    .sentieon
     ├── Jobs    
     │   ├── run_Jobs.pl
     │   ├── variant_calling.sh
