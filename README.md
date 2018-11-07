@@ -33,13 +33,11 @@ git clone https://github.com/shanghungshih/sentieon.git
 
 3. download reference and annotation data
 ``` shell
-cd sentieon/Reference
 bash hg19_download.sh
 ```
 
 4. decompress sentieon bin file
 ``` shell
-cd sentieon/bins
 tar zxvf sentieon-genomics-201808.tar.gz
 ```
 
