@@ -15,9 +15,9 @@ git clone https://github.com/shanghungshih/sentieon.git
 
 ## Quick start
 1. 
-* `-i` - ID-File: the File contain Sample ID
-* `-s` - Start: From which lines (sample).
-* `-e` - End: To which lines (sample).
+* `-i` : ID-File: the File contain Sample ID
+* `-s` : Start: From which lines (sample).
+* `-e` : End: To which lines (sample).
 ``` shell
 perl run_Jobs.pl -i test_list.txt -s 1 -e 1
 ```
