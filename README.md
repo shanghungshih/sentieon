@@ -28,8 +28,8 @@ git clone https://github.com/shanghungshih/sentieon.git
 * number of threads to use : `nt=32`
 * update annotation files
 
-2. check `sentieon/Jobs/run_Jobs.pl` for changing max submit numbers:
-* max submit numbers : `max_num=3`
+2. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
+* max parallel numbers : `max_num=3`
 
 3. download reference and annotation data
 ``` shell
