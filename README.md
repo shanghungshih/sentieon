@@ -12,6 +12,7 @@ git clone https://github.com/shanghungshih/sentieon.git
 * `fastq_2="${fastq_folder}/${SampleName}_R2.fastq.gz"`
 * update annotation files
 
+2. check `sentieon/Jobs/run_Jobs.pl`
 
 ## Quick start
 1. 
