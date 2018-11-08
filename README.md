@@ -4,6 +4,7 @@
     ├── Jobs    
     │   ├── run_Jobs.pl
     │   ├── variant_calling.sh
+    │   ├── check_Jobs.sh
     │   ├── _rc_function_.sh
     │   ├── test_list.txt
     │   ├── Outputs
