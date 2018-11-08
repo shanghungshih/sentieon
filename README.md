@@ -4,6 +4,7 @@
     ├── Jobs    
     │   ├── run_Jobs.pl
     │   ├── variant_calling.sh
+    │   ├── check_Jobs.sh
     │   ├── _rc_function_.sh
     │   ├── test_list.txt
     │   ├── Outputs
@@ -23,6 +24,7 @@ git clone https://github.com/shanghungshih/sentieon.git
 
 ## Before you start
 1. check `sentieon/Jobs/variant_calling.sh`, the followings are default setting:
+- SENTIEON_LICENSE : `export SENTIEON_LICENSE=xxx.xxx.xxx.xxx:xxx`
 - main directory : `main_dir="/home/shanghung/sentieon"`
 - fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
 - fastq2 file name : `fastq_2="${fastq_folder}/${SampleName}_R2.fastq.gz"`
