@@ -46,6 +46,7 @@ tar zxvf sentieon-genomics-201808.tar.gz
 
 
 ## Quick start
+1. run jobs
 - `-i` : ID-File: the File contain Sample ID
 - `-s` : Start: From which lines (sample).
 - `-e` : End: To which lines (sample).
@@ -53,3 +54,9 @@ tar zxvf sentieon-genomics-201808.tar.gz
 perl run_Jobs.pl -i test_list.txt -s 1 -e 1
 ```
 
+2. check jobs (if checkpoint found in Outputs, then return success)
+- list_ID : read from command line
+- checkpoint : "*.vqsr_SNP_INDEL.VQSR.pdf" (default)
+``` shell
+bash check_Jobs.sh test_list.txt
+```
