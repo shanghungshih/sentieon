@@ -22,8 +22,8 @@ git clone https://github.com/shanghungshih/sentieon.git
 
 ## Before you start
 1. check `sentieon/Jobs/variant_calling.sh`, the followings are default setting:
-  -- main directory : `main_dir="/home/shanghung/sentieon"`
-  -- fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
+  - - main directory : `main_dir="/home/shanghung/sentieon"`
+  - - fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
   - fastq2 file name : `fastq_2="${fastq_folder}/${SampleName}_R2.fastq.gz"`
   - number of threads to use : `nt=32`
   - update annotation files
