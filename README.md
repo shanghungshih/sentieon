@@ -26,10 +26,10 @@ git clone https://github.com/shanghungshih/sentieon.git
 * fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
 * fastq2 file name : `fastq_2="${fastq_folder}/${SampleName}_R2.fastq.gz"`
 * number of threads to use : `nt=32`
--- update annotation files
+- - update annotation files
 
 2. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
--- max parallel numbers : `max_num=3`
+- - max parallel numbers : `max_num=3`
 
 3. download reference and annotation data (recommad using `screen` rather than `bg` or `&`)
 -- open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
