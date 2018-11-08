@@ -48,7 +48,7 @@ tar zxvf sentieon-genomics-201808.tar.gz
 
 
 ## Quick start
-1. run jobs
+1. run jobs (suggest running via screen)
 - `-i` : ID-File: the File contain Sample ID
 - `-s` : Start: From which lines (sample).
 - `-e` : End: To which lines (sample).
