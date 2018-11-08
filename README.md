@@ -31,7 +31,7 @@ git clone https://github.com/shanghungshih/sentieon.git
 2. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
 * max parallel numbers : `max_num=3`
 
-3. download reference and annotation data
+3. download reference and annotation data (recommad using `screen` rather than `bg` or `&`)
 - open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
 - attach existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+A+D` to detach
 - close existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+D` to close it
