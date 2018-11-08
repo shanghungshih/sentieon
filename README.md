@@ -32,7 +32,7 @@ git clone https://github.com/shanghungshih/sentieon.git
 - update annotation files
 
 2. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
-- max parallel numbers : `max_num=3`
+- line36 : `$running_job < 3`
 
 3. download reference and annotation data (recommad using `screen` rather than `bg` or `&`)
 - open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
