@@ -20,6 +20,7 @@
 git clone https://github.com/shanghungshih/sentieon.git
 ```
 
+
 ## Before you start
 1. check `sentieon/Jobs/variant_calling.sh`, the followings are default setting:
 - main directory : `main_dir="/home/shanghung/sentieon"`
@@ -42,6 +43,7 @@ tar zxvf sentieon-genomics-201808.tar.gz
 ```
 
 5. put raw data of the sample to `sentieon/fastq` in corresponding folder 
+
 
 ## Quick start
 - `-i` : ID-File: the File contain Sample ID
