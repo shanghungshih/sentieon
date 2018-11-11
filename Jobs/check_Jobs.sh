@@ -29,5 +29,16 @@ done < $list_ID
 # print arr_success / arr_fail
 printf 'list_ID: [%s]\n' "$list_ID"
 printf 'checkpoint: [%s]\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n' "$checkpoint"
-printf 'fail list: [%s]\n\n' "${arr_fail[@]}"
-printf 'success list: [%s]\n\n' "${arr_success[@]}"
+
+tmp=""
+for i in ${arr_fail[@]}; do
+  tmp="$tmp, $i"
+done
+printf 'fail list: %s samples, [%s]\n\n' "${#arr_fail[@]}" "$tmp"
+
+tmp=""
+for i in ${arr_success[@]}; do
+  tmp="$tmp, $i"
+done
+printf 'success list: %s samples, [%s]\n\n' "${#arr_success[@]}" "$tmp"
+
