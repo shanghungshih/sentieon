@@ -32,13 +32,13 @@ printf 'checkpoint: [%s]\n- - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 tmp=""
 for i in ${arr_fail[@]}; do
-  tmp="$tmp, $i"
+  tmp="$i, $tmp"
 done
 printf 'fail list: %s samples, [%s]\n\n' "${#arr_fail[@]}" "$tmp"
 
 tmp=""
 for i in ${arr_success[@]}; do
-  tmp="$tmp, $i"
+  tmp="$i, $tmp"
 done
 printf 'success list: %s samples, [%s]\n\n' "${#arr_success[@]}" "$tmp"
 
