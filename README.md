@@ -24,20 +24,20 @@ git clone https://github.com/shanghungshih/sentieon.git
 
 ## Before you start
 1. check `sentieon/Jobs/variant_calling.sh`, the followings are default setting:
-- SENTIEON_LICENSE : `export SENTIEON_LICENSE=xxx.xxx.xxx.xxx:xxx`
-- main directory : `main_dir="/home/shanghung/sentieon"`
-- fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
-- fastq2 file name : `fastq_2="${fastq_folder}/${SampleName}_R2.fastq.gz"`
-- number of threads : `nt=32`
-- update annotation files
+    - SENTIEON_LICENSE : `export SENTIEON_LICENSE=xxx.xxx.xxx.xxx:xxx`
+    - main directory : `main_dir="/home/shanghung/sentieon"`
+    - fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
+    - fastq2 file name : `fastq_2="${fastq_folder}/${SampleName}_R2.fastq.gz"`
+    - number of threads : `nt=32`
+    - update annotation files
 
 2. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
-- line36 : `$running_job < 3`
+    - line36 : `$running_job < 3`
 
 3. download reference and annotation data (recommad using `screen` rather than `bg` or `&`)
-- open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
-- attach existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+A+D` to detach
-- close existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+D` to close it
+    - open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
+    - attach existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+A+D` to detach
+    - close existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+D` to close it
 
 4. decompress sentieon bin file
 ``` shell
@@ -49,16 +49,16 @@ tar zxvf sentieon-genomics-201808.tar.gz
 
 ## Quick start
 1. run jobs (suggest running via screen)
-- `-i` : ID-File: the File contain Sample ID
-- `-s` : Start: From which lines (sample).
-- `-e` : End: To which lines (sample).
+    - `-i` : ID-File: the File contain Sample ID
+    - `-s` : Start: From which lines (sample).
+    - `-e` : End: To which lines (sample).
 ``` shell
 perl run_Jobs.pl -i test_list.txt -s 1 -e 1
 ```
 
 2. check jobs (if checkpoint found in Outputs, then return success)
-- list_ID : read from command line
-- checkpoint : "*.vqsr_SNP_INDEL.VQSR.pdf" (default)
+    - list_ID : read from command line
+    - checkpoint : "*.vqsr_SNP_INDEL.VQSR.pdf" (default)
 ``` shell
 bash check_Jobs.sh test_list.txt
 ```
