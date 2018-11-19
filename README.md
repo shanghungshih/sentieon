@@ -44,7 +44,7 @@ git clone https://github.com/shanghungshih/sentieon.git
 tar zxvf sentieon-genomics-201808.tar.gz
 ```
 
-5. put raw data of the sample to `sentieon/fastq` in corresponding folder 
+5. put raw data of the sample to `sentieon/Fastq` in corresponding folder 
 
 
 ## Quick start
