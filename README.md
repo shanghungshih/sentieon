@@ -43,7 +43,7 @@ tar zxvf sentieon-genomics-201808.tar.gz
     - update annotation files
 
 4. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
-    - line36 : `$running_job < 3`
+    - line36 : `$running_job < 2`
 
 5. put raw data of the sample to `sentieon/Fastq` in corresponding folder 
 
