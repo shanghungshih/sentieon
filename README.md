@@ -1,5 +1,5 @@
 # sentieon
-Variant calling pipeline implements with license server for Sentieon
+GATK best practice variant calling pipeline implements with license server for Sentieon
 
     .
     ├── Jobs    
