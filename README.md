@@ -1,6 +1,6 @@
 # sentieon
 Variant calling pipeline implements with license server for Sentieon
-- - -
+
     .
     ├── Jobs    
     │   ├── run_Jobs.pl
