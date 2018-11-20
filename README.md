@@ -24,7 +24,17 @@ git clone https://github.com/shanghungshih/sentieon.git
 
 
 ## Before you start
-1. check `sentieon/Jobs/variant_calling.sh`, the followings are default setting:
+1. decompress sentieon bin file
+``` shell
+tar zxvf sentieon-genomics-201808.tar.gz
+```
+
+2. download reference and annotation data (recommad using `screen` rather than `bg` or `&`)
+    - open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
+    - attach existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+A+D` to detach
+    - close existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+D` to close it
+    
+3. check `sentieon/Jobs/variant_calling.sh`, the followings are default setting:
     - SENTIEON_LICENSE : `export SENTIEON_LICENSE=xxx.xxx.xxx.xxx:xxx`
     - main directory : `main_dir="/home/shanghung/sentieon"`
     - fastq1 file name : `fastq_1="${fastq_folder}/${SampleName}_R1.fastq.gz"`
@@ -32,18 +42,8 @@ git clone https://github.com/shanghungshih/sentieon.git
     - number of threads : `nt=32`
     - update annotation files
 
-2. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
+4. check `sentieon/Jobs/run_Jobs.pl` for changing max parallel numbers:
     - line36 : `$running_job < 3`
-
-3. download reference and annotation data (recommad using `screen` rather than `bg` or `&`)
-    - open new screen : `screen -S download_hg19`, and run `bash hg19_download.sh`, then `ctrl+A+D` to detach
-    - attach existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+A+D` to detach
-    - close existed screen : get screen id with `screen -ls`, and `screen -r xxx` to attach, then `ctrl+D` to close it
-
-4. decompress sentieon bin file
-``` shell
-tar zxvf sentieon-genomics-201808.tar.gz
-```
 
 5. put raw data of the sample to `sentieon/Fastq` in corresponding folder 
 
