@@ -66,6 +66,7 @@ workdir=${JOBDIR}/Outputs/${SampleName} #Determine where the output files will b
 # ******************************************
 
 mkdir -p $workdir
+mkdir -p ${JOBDIR}/logs
 logfile=$workdir/run.log
 exec 3<&1 4<&2
 exec >$logfile 2>&1
