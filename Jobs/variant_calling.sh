@@ -73,12 +73,12 @@ exec >$logfile 2>&1
 cd $workdir
 
 
-if [ ! -d "${ref_dir}/ucsc.hg19.fasta.bwt" ]; then
-.log 3 "Start: build bwa index"
-.timer start
-$release_dir/bin/bwa index $fasta
-.log 3 "Done:  build bwa index"
-.timer stop
+if [ ! -f "${ref_dir}/ucsc.hg19.fasta.bwt" ]; then
+  .log 3 "Start: build bwa index"
+  .timer start
+  $release_dir/bin/bwa index $fasta
+  .log 3 "Done:  build bwa index"
+  .timer stop
 fi
 
 
