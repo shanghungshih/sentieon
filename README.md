@@ -47,6 +47,7 @@ tar zxvf sentieon-genomics-201808.tar.gz
 
 5. put raw data of the sample to `sentieon/Fastq` in corresponding folder 
 
+6. finally, run "one" sample before multiple submit for building reference index
 
 ## Quick start
 1. run jobs (suggest running via screen)
